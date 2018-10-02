@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "jshint": "jshint -c .jshintrc --exclude-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/cassiolpaixao90/node-architecture-server/issues"
   },
-  "homepage": "https://github.com/cassiolpaixao90/node-architecture-server#readme"
+  "homepage": "https://github.com/cassiolpaixao90/node-architecture-server#readme",
+  "devDependencies": {
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.6",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "jshint",
+    "jscs"
+  ]
 }
