@@ -5,5 +5,6 @@
   "semi": true,
   "tabWidth": 2,
   "useTabs": false,
-  "prettier.bracketSpacing": true
+  "prettier.bracketSpacing": true,
+  "bracketSpacing": true
 }

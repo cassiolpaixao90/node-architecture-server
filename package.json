@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint '**/*.{js,jsx}' --quiet",
-    "format": "prettier --write '**/*.{js}'",
+    "lint": "eslint 'src/**/*.js'",
+    "format": "prettier --write 'src/**/*.js'",
     "precommit": "lint-staged"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "devDependencies": {
     "eslint": "^5.6.1",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
@@ -30,6 +31,9 @@
     "prettier": "^1.14.3"
   },
   "lint-staged": {
-    "*.{js,json}": ["prettier --write", "git add"]
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

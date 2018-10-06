@@ -1,6 +1,6 @@
-var logToConsole = msg => {
+const logToConsole = msg => {
   console.log(msg);
 };
 
-let message = 'my message ';
+const message = 'my message';
 logToConsole(message);
