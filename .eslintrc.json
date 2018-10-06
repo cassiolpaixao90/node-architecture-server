@@ -1,0 +1,42 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "singleQuote": true,
+        "printWidth": 100,
+        "semi": true,
+        "tabWidth": 2,
+        "useTabs": false,
+        "prettier.bracketSpacing": true
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "off"
+    ]
+  },
+  "plugins": [
+    "airbnb",
+    "prettier"
+  ]
+}
