@@ -24,7 +24,7 @@ module.exports = {
     semi: ['error', 'always'],
   },
   globals: {
-    document: true,
+    document: false,
   },
   plugins: ['prettier'],
 };
